@@ -1,0 +1,115 @@
+/* ================================= 
+全局设置
+==================================== */
+
+* {
+	box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ================================= 
+移动优先设置
+==================================== */
+
+.main-header {
+    text-align: center;
+    background-color: #3BA3D0;
+    padding-bottom: 1em;
+}
+
+.name{
+    color: aliceblue;
+}
+
+h1 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.main-nav li {
+    padding: 1em 0;
+}
+
+.main-nav li:hover {
+    background-color: #b9e61f;
+    transition: .2s;
+}
+
+.container {
+    min-height: calc(100vh - 37.48px);
+}
+
+footer {
+    text-align: center;
+    padding: .5em 0;
+    background-color: #3BA3D0;
+}
+.wrap {
+    min-height: calc(60vh - 28px);
+
+}
+
+.banner {
+    box-sizing: border-box;
+    margin:auto;
+    background: url("../images/11/img-cb9887821ccc4112d4ce53a0ff8afbf4.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 1em 0;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow:1px 1px 1px black;
+    text-align:center;
+}
+
+/* ================================= 
+视窗宽度为700时，进行运行以下规则
+==================================== */
+
+@media (min-width: 700px) {
+    
+    .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+        padding: 1em 0;
+    }
+    
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-nav li {
+        border-radius: 15px;
+    }
+    
+    .main-nav li a {
+        padding: 1em 2em;   
+    }
+    
+    h1 {
+        padding: 0;
+    }
+}   
+  .banner {
+        height: 1000px;
+    }
+
+.tu{
+        flex-basis: 15%;
+        flex-grow: 1;
+        margin: 0.5em;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 0.5px solid rgba(2,2,2,2);
+}
